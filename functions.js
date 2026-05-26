@@ -83,27 +83,15 @@ $(document).ready(function(){
     });
   });
 
-    // populate the poem content when clicked 
+    // The old poem browser loaded text from a PHP/MySQL endpoint. The static site keeps the
+  // click styling but does not attempt to fetch retired server-side content.
   $(".poemlink1bg a, .poemlink0bg a").click(function(event) {
-	event.preventDefault();
-    name = $(this).html();
-	arg = "SELECT * FROM poemContent WHERE name = '" + name + "'";
-	
-	// reset the background colors and highight this poem
-	$(".poemlink1bg").css("background-color","#DDDDDD");
-	$(".poemlink0bg").css("background-color","#999999");
-	$(".poemlink1bg a, .poemlink0bg a").css("font-style","normal");
-	$(this).parent().css("background-color","#9999FF"); 
-	$(this).css("font-style","italic"); 
-
-	$.ajax({
-	    url: "docHandler.php",
-	    type: "POST",
-	    async: false,
-	    data: {db: "evanrose_poems", argument: arg}
-	}).done(function(msg) {
-	    output = ($.parseJSON(msg));
-	    $("#poemtext").html("<u>" + output[0].name + "</u><br/><br/>" + (String(output[0].content)).split("\n").join("<br/>").split("\t").join("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"));   
-	});  
-   });
+    event.preventDefault();
+    $(".poemlink1bg").css("background-color","#DDDDDD");
+    $(".poemlink0bg").css("background-color","#999999");
+    $(".poemlink1bg a, .poemlink0bg a").css("font-style","normal");
+    $(this).parent().css("background-color","#9999FF");
+    $(this).css("font-style","italic");
+    $("#poemtext").html("This archived poem browser is not included in the static site.");
+  });
 });

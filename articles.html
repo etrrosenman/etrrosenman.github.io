@@ -12,7 +12,25 @@
   <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
 </head>
 <body>
-<?php include ("navigation.php"); ?>
+<div id = "topbar">
+   <div id="sitename"><a href = "index.html">Evan T.R. Rosenman</a></div>
+</div>
+
+<div class = "widebar">
+   <ul class = "topnav">
+      <li class = "navitem"><a href="index.html">About Me</a></li> 
+      <li class = "navitem"><a href="research.html">Research</a></li>
+      <li class = "navitem"><a href="teaching.html">Teaching</a></li> 
+      <li class = "navitem"><a href="Rosenman CV.pdf">CV</a></li>
+ <!--      <li class = "navitem"><a href="#" class = "subnav">Connect &nbsp; &nbsp;</a>
+        <ul class="submenu" class = "connect">
+          <li  class = "connect"><a href="https://twitter.com/EvanRosenman">Twitter</a></li>
+          <li  class = "connect"><a href="http://www.linkedin.com/pub/evan-rosenman/38/b25/432">LinkedIn</a></li>
+          <li  class = "connect" id = "contact"><a href="contactme.html">Contact Me</a></li>
+        </ul>
+      </li>  -->
+    </ul>
+</div>
  <div class = "center">
    <br/>
   <div id = "description">
@@ -38,79 +56,23 @@
     <br/><br/>
     Click on any node to go to the article on The Crimson website. To
     see excerpts from a few of my lengthier Crimson pieces, head to the 
-   <a href = "articlelist.php">Selected Clips</a> page. <!-- To learn about how this
+   <a href = "articlelist.html">Selected Clips</a> page. <!-- To learn about how this
    visualization was generated, check out ProseMapper on the <a href =
-  "projects.php">Projects Page</a>.--> <br/><br/>
+  "projects.html">Projects Page</a>.--> <br/><br/>
 </div>
 </div>
 
 <br/><br/><br/>
-
-<canvas id="viewport" width = "800" height = "800"></canvas>
-<script language="javascript" type="text/javascript">
- var sys = arbor.ParticleSystem(10000,0,1.0);
- sys.renderer = Renderer("#viewport");
-
-  $.ajax({
-    url: "docHandler.php",
-    type: "POST",
-    async: false,
-    data: {db: "evanrose_articles",
-    argument: "SELECT MAX(ABS(y)),MAX(ABS(x)) FROM articleLocations"}
-  }).done(function(msg) {
-    maxes = ($.parseJSON(msg));
-    $maxy = maxes[0]["MAX(ABS(y))"];
-    $maxx = maxes[0]["MAX(ABS(x))"];
- });
-
-
-
- $.ajax({
-    url: "docHandler.php",
-    type: "POST",
-    async: false,
-    data: {db: "evanrose_articles", argument: "SELECT * FROM articleLocations JOIN articleContent on articleContent.name = articleLocations.name"}
-  }).done(function(msg) {
-    articles = $.parseJSON(msg);
-
-    // place nodes
-    for(var i in articles){
-    var node = sys.addNode(articles[i].name, {
-        x: parseFloat(articles[i].x)/$maxx * 1.45,
-        y: parseFloat(articles[i].y)/$maxy * 1.45,
-       'cluster':parseInt(articles[i].cluster),
-       'content':articles[i].content 
-    });
-
- } 
-
-  }); 
-
-
-  $.ajax({
-    url: "docHandler.php",
-    type: "POST",
-    async: false,
-    data: {db: "evanrose_articles", argument: "SELECT * FROM articleEdges"}
-  }).done(function(msg) {
-    edges = $.parseJSON(msg);
-
-    // place edges
-    for(var i in edges){
-    if(parseFloat(edges[i].Distance) > 0.98 && sys.getEdges(edges[i].B,edges[i].A).length == 0)
-        sys.addEdge(edges[i].A, edges[i].B,{'color':'black','word1':edges[i].word1,
-           'word2':edges[i].word2,'word3':edges[i].word3}); 
-  } 
-  }); 
-</script>
-<div id = "spanner">
- <div id = "content"><a href = "#">Close Poem</a><div id = "poem"></div>
-</div> 
+<div class="retired-feature">
+  <p>This archived interactive feature depended on a retired server-side database and is not included in the static GitHub Pages version.</p>
 </div>
-<div id = "test"></div>
+
 
 <div class = "center">
-<?php include ("footer.php"); ?>
+   <br/>
+   <div id = "footer1"><p id = "copyright">&copy; 2023, Evan
+  T.R. Rosenman</p></div>
+  <div id = "footer2"></div>
 </div>
 
 </body>
