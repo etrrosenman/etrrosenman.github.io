@@ -1,0 +1,109 @@
+$(document).ready(function(){
+  // light up parent menu option when poem submenu is highlighted 
+  $(".poemoptions a").hover(function() {
+      $(this).css("background-color","#000000");
+      $(".poetry").css("background-color","#000000");
+
+      $(".poemoptions a, .poetry").hover(function() {
+          $(".poetry").css("background-color","#000000");
+      }, function() {
+	  $(".poetry").css("background-color","#444444");
+      });
+  },
+  function () {
+      $(this).css("background-color","#444444");
+  }); 
+
+  // light up parent menu option when poem submenu is highlighted 
+  $(".articleoptions a").hover(function() {
+      $(this).css("background-color","#000000");
+      $(".journalism").css("background-color","#000000");
+
+      $(".articleoptions a, .journalism").hover(function() {
+          $(".journalism").css("background-color","#000000");
+      }, function() {
+	  $(".journalism").css("background-color","#444444");
+      });
+  },
+  function () {
+      $(this).css("background-color","#444444");
+  }); 
+
+  // light up menu options when mouse hovers over them
+  $(".navitem, .connect, .writings").hover(function() {
+      $(this).css("background-color","#000000");
+  },
+  function () {
+      $(this).css("background-color","#444444");
+  });
+
+  // keep second tier of submenus open when hovered over
+  $(".poetry").hover(function() {
+      $(".poemoptions a").height($(".poetry").height()-2);
+      $(".poemoptions").show();
+      $(".poemoptions").hover(function() {
+          $(".poemoptions").show();},
+			      function() {
+	  $(".poemoptions").hide();});
+  },
+  function () {
+      $(".poemoptions").hide();
+  });
+
+  // keep second tier of submenus open when hovered over
+  $(".journalism").hover(function() {
+      $(".articleoptions a").height($(".poetry").height()-2);
+      $(".articleoptions").show();
+      $(".articleoptions").hover(function() {
+          $(".articleoptions").show();},
+			      function() {
+	  $(".articleoptions").hide();});
+  },
+  function () {
+      $(".articleoptions").hide();
+  });
+
+  // hide poem divs
+  $("#content").hide();
+
+  $("#content a").click(function(event) {
+    event.preventDefault();
+    $("#content").slideToggle();
+  });
+
+  $(".subnav").click(function(event) { //When trigger is clicked...	 	
+    
+      //Following events are applied to the subnav itself (moving subnav up and down)
+      $(this).parent().find("ul.submenu").slideToggle(); //Drop down the subnav on click
+      event.preventDefault();
+
+      // When the mouse hovers out of the subnav, move it back up
+      $(this).parent().hover(function() {}, function(){	
+      $(this).parent().find("ul.submenu").slideUp(); 
+    });
+  });
+
+    // populate the poem content when clicked 
+  $(".poemlink1bg a, .poemlink0bg a").click(function(event) {
+	event.preventDefault();
+    name = $(this).html();
+	arg = "SELECT * FROM poemContent WHERE name = '" + name + "'";
+	
+	// reset the background colors and highight this poem
+	$(".poemlink1bg").css("background-color","#DDDDDD");
+	$(".poemlink0bg").css("background-color","#999999");
+	$(".poemlink1bg a, .poemlink0bg a").css("font-style","normal");
+	$(this).parent().css("background-color","#9999FF"); 
+	$(this).css("font-style","italic"); 
+
+	$.ajax({
+	    url: "docHandler.php",
+	    type: "POST",
+	    async: false,
+	    data: {db: "evanrose_poems", argument: arg}
+	}).done(function(msg) {
+	    output = ($.parseJSON(msg));
+	    $("#poemtext").html("<u>" + output[0].name + "</u><br/><br/>" + (String(output[0].content)).split("\n").join("<br/>").split("\t").join("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"));   
+	});  
+   });
+});

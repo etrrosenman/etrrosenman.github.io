@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<title>Evan T.R. Rosenman</title>
+<head>
+  <link rel="stylesheet" href="./style.css" type="text/css">
+ <script src="jquery.js"></script> 
+  <script src="functions.js"></script>
+</head>
+<body>
+  <?php include ("navigation.php"); ?>
+  <div class = "center">
+    <br/>
+  <div id = "description">
+
+<b><font size="5">Department Halloween Party Potluck Invite (2016)</font></b><br/><br/>
+Hello all,
+ 
+<p>Do you want to hear a scary story?
+
+<p><i>It is the day of the Statistics Department Halloween Party, and all of Sequoia is abuzz with excitement. Anxiously looking at their watches, the students, faculty, and staff rejoice when 4:30 finally arrives.
+
+<p>All gallop excitedly to the lounge, full of laughter and good Halloween cheer. But then, walking in, they see a terrifying sight.
+
+<p>No food.
+
+<p>None.
+
+<p>A collective gasp. Then a scream goes up from somewhere in the crowd. The terrified first-year PhDs begin running in circles, shouting “sigma-algebra!” to anyone who will listen. Someone pours Sriracha on a Stats 305 homework and presents it as an offering.
+
+<p>Dismayed professors shake their heads and return to their offices. No researcher corrects for multiple hypothesis testing, ever again.</i>
+
+<p><b>Don’t let this be your future.<br/>
+Sign up to bring a dish to the Halloween Potluck!</b>
+
+<p>Thanks,
+
+<p>Evan
+
+</div>
+  <?php include ("footer.php"); ?>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+#description{
+        background-color: #FFFFDD;
+        padding: 10px; 
+        padding-top: 20px; 
+	height: auto; 
+}
+
+p, td, span, .experience li, .experience a{ 
+	font-family: verdana, arial, helvetica, sans-serif;
+}
+
+h1 {
+	font: 90% verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+}
+
+h2 {
+	border-bottom: 1px solid #666;
+	clear: both;
+	font: 80% verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	margin: 15px 0 10px 0;
+	padding: 0 0 3px 0;
+	width: 750px;
+}
+
+h3 {
+	float: left;
+	font: 80% verdana, arial, helvetica, sans-serif;
+	font-weight: bold;
+	margin: 0 0 0 0;
+}
+
+.experience li{
+        float: left; 
+	font-size: 75%;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;   
+}
+
+p {
+	font-size: 75%;
+	margin: 0 0 10px 0;
+	padding: 0;
+	width: 625px;
+}
+
+#bio_left {
+	font-size: 75%;
+	float: left;
+	width: 625px;
+}
+
+#bio_right {
+	font-size: 75%;
+	float: right;
+	text-align: left;
+	width: 125px;
+}
+
+.company {
+	clear: both;
+	margin: 0 0 0px 0;
+	padding: 0;
+}
+
+.data {
+	padding-left: 125px;
+}
+
+.date {
+	float: left;
+	width: 125px;
+}
+
+.job {
+	clear: both;
+	width: 750px;
+}
+
+.nonfirst {
+        padding-top: 10px; 
+}
+
+.job_data {
+	float: left;
+	width: 625px;
+}
+
+.location {
+	float: right;
+	text-align: left;
+	width: 125px;
+}
+
+.position {
+	font-style: italic;
+	margin: 0 0 0 0;
+}
+
+#references {
+	margin-top: 20px;
+}
+
+#meta {
+	margin-top: 30px;
+}
+
+a {
+        text-decoration: none; 
+        color: blue; 
+}
+
+.jobdetails {
+        margin-top: 0px; 
+}
+
+.inlineLink {
+        text-decoration: none; 
+        color: blue;
+	margin: 0 0 0 0; 
+	padding: 0 0 0 0; 
+        font-weight: normal; 
+        display:inline;
+}

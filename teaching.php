@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<title>Evan T.R. Rosenman</title>
+<head>
+  <link rel="stylesheet" href="./style.css" type="text/css">
+ <script src="jquery.js"></script> 
+  <script src="functions.js"></script>
+</head>
+<body>
+  <?php include ("navigation.php"); ?>
+  <div class = "center">
+    <br/>
+  <div id = "description">
+  	<b><font size="5">Claremont McKenna</font></b><br/>
+  	<p>In Fall 2023, I will be teaching Math 151: Probability.</p>		
+    <b><font size="5">Stanford</font></b><br/>
+    <p>I served as the sole Instructor for <a href="https://web.archive.org/web/20201020034725/http://web.stanford.edu/~rosenman/CME195/index.html">
+    Stats 195</a> in Spring 2019. The course is an intensive graduate-level introduction to
+    programming in R, with problem set and project components. Student evaluations can be provided
+    upon request. 
+
+    <p>Additionally, I have served as a Teaching Assistant for the following courses:</p>
+    <table id = "classesTaught">
+				  	<thead>
+					  <tr>
+					    <th>Quarter</th>
+					    <th>Course Number</th>
+					    <th>Course Title</th>
+					  </tr>
+				    </thead>
+	              <tbody>	                
+				    <tr>
+	                  <td>Fall 2019</td>
+	                  <td>MS&E 327</td>
+	                  <td>Topics in Causal Inference</td>
+	                </tr>
+	                <tr>
+	                  <td>Winter 2017</td>
+	                  <td>Stats 216</td>
+	                  <td>Introduction to Statistical Learning</td>
+	                </tr>
+	                <tr>
+	                  <td>Fall 2017</td>
+	                  <td>Stats 305a</td>
+	                  <td>Linear Models</td>
+	                </tr>
+	                <tr>
+	                  <td>Fall 2016</td>
+	                  <td>Stats 305a</td>
+	                  <td>Linear Models</td>
+	                </tr>
+	               	<tr>
+	                  <td>Summer 2016</td>
+	                  <td>Stats 202 </td>
+	                  <td>Data Mining and Analysis</td>
+	                </tr>
+					<tr>
+	                  <td>Spring 2016</td>
+	                  <td>CS 229</td>
+	                  <td>Machine Learning </td>
+	                </tr>
+	                <tr>
+	                  <td>Winter 2016</td>
+	                  <td>Stats 200 </td>
+	                  <td>Introduction to Statistical Inference </td>
+	                </tr>
+	  			   </tbody>
+				 </table>
+    <b><font size="5">Harvard</font></b><br/>
+    <p>I served as an undergraduate Course Assistant for the following courses:</p>
+    <table id = "classesTaught">
+				  	<thead>
+					  <tr>
+					    <th>Semester</th>
+					    <th>Course Number</th>
+					    <th>Course Title</th>
+					  </tr>
+				    </thead>
+	              <tbody>
+					<tr>
+	                  <td>Fall 2009</td>
+	                  <td>Math 21a </td>
+	                  <td>Multivariable Calculus </td>
+	                </tr>
+	                <tr>
+	                  <td>Spring 2009</td>
+	                  <td>Math 21b</td>
+	                  <td>Linear Algebra and Differential Equations </td>
+	                </tr>
+	                <tr>
+	                  <td>Fall 2010</td>
+	                  <td>Math 21a </td>
+	                  <td>Multivariable Calculus </td>
+	                </tr>
+	  			   </tbody>
+				 </table>
+ </div>
+  <?php include ("footer.php"); ?>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<title>Academic Writing</title>
+<head>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="functions.js"></script>
+</head>
+<body>
+<?php include ("navigation.php"); ?>
+<div class = "center">
+<br/>
+  <div id = "description">
+    <div id = "acadtitle"><font size="5">Academic Writing</font></div>
+        <p class = "acadcategory">Senior Thesis</p>
+	<p class="title">"Retweets&#x2014;but Not Just
+		  Retweets: Quantifying and Predicting Influence on
+		  Twitter" [<a href = "Rosenman_thesis.pdf">PDF</a>]</p>
+        <ol class = "reflist">
+          <li>Evan Rosenman, March 2012. Submitted in partial
+	  fulfillment of the honors requirements for a degree in Applied
+	  Mathematics. <br/></li>
+          <li><br/><b>Abstract:</b><br/> There has recently been a
+	  sharp uptick in interest among researchers and private firms
+	  in determining how to quantify influence on the
+	  microblogging site Twitter. We restrict our attention solely
+	  to celebrities, and using data collected from Twitter APIs
+	  in February and March 2012, we explore four different
+	  influence metrics for a group of 60
+	  prominent and well-followed individuals. We find that
+	  retweet-based influence is the most significant type of
+	  influence, but other effects &#x2014 like the adoption of
+	  hashtags and links &#x2014 are comparable in terms of
+	  generated impressions, and are governed by fundamentally
+	  different dynamics. We use the insights from our analysis to
+	  develop predictive models of retweets, hashtag and link
+	  adoptions, and increases in follower counts.
+	  We find that, across different types of influence, the
+	  degree to which a celebrity is discussed on Twitter
+	  is an extremely useful predictor, while follower counts are
+	  comparatively less predictive.</p>
+	  </li></ol>
+	  <br/>
+          <p class = "acadcategory">Other Research Work</p>
+	  <p class="title">"A Mathematical Model of the Twitter Graph
+	  Structure" [<a href = "Final project.pdf">PDF</a>]</p>
+          <ol class = "reflist">
+          <li>Evan Rosenman, December 2011. Final project for Applied
+	    Math 115.<br/></li>
+          <li><br/><b>Description:</b><br/>In this research paper,
+	    I sought to model the evolution of the Twitter follower
+	    graph by assigning each node (Twitter user) an "affinity" score,
+	    representing the user's intrinsic attractiveness to other
+	    users. I aimed to construct a graph which would resemble
+	    Twitter in both the skewed shape of its follower
+	    distribution and the high level of asymmetry in its following
+	    relationships. Ultimately, I found that the follower
+	    distribution was well-modelled by assigning user affinity
+	    scores according to a Chi-Squared Distribution and
+	    determining the probability that any node x follows
+	    another node y using both the absolute difference in the
+	    nodes' affinity scores and the number of inlinks to node
+	    y. </p>
+	  </li></ol>
+	  <p class="title">"Impact of Lithium-coated PFCs on the Edge Neutral Density on NSTX" [<a href = "PPPL Paper.pdf">PDF</a>]</p>
+          <ol class = "reflist">
+          <li>Evan Rosenman and Devon Battaglia, August
+	    2010. Submitted upon completion of research project as a
+	    laboratory intern at Princeton Plasma Physics Laboratory.<br/></li>
+          <li><br/><b>Abstract:</b><br/>Wall recycling of deuterium is
+	    reduced on NSTX by applying solid lithium coatings to the
+	    carbon composite plasma-facing components. The
+	    impact of the reduced recycling on the neutral density
+	    profile in the scrape-off layer (SOL) is inferred
+	    using a high-speed camera (268 Hz) with an H-beta filter
+	    and a chordal view of the SOL (0.2 cm resolution).
+	    The recorded intensity profile is converted to a radial
+	    profile of plasma emissivity using an absolute calibration
+	    ofthe camera and an Abel Inversion. The neutral density is
+	    computedby dividing the plasma emissivity by a function of
+	    the electron density and temperature, which are estimated
+	    using data from the Thomson scattering diagnostic. Initial
+	    calculations indicate that the neutral deuterium density
+	    decreases as the total amount of pre-shot lithium
+	    deposited in NSTX increases. The error in the profile
+	    measurement is quantified via Monte Carlo techniques.
+	    This work is supported by US DOE contracts
+	    DE-AC02-09CH11466 and
+	    DE- AC05-00OR22725.</p>
+	  </li></ol>
+	  <br/>
+          <p class = "acadcategory">Writing Samples</p>
+	  <p class="title">"Imagining, Properly: Use and Misuse of the Fictive Mind in Sense and Sensibility" [<a href = "Imagination.pdf">PDF</a>]</p>
+          <ol class = "reflist">
+          <li>Evan Rosenman, May 2012. Final paper for English 141:
+	    The 18th Century Novel.<br/></li>
+          <li><br/><b>Description:</b><br/>Though critics have often
+	    focused on the titular dichotomy in Jane Austen's <i>Sense
+	    and Sensibility</i>, Austen offers  a subtler dichotomy,
+	    and a more decisive commentary, in her presentation of
+	    the imaginative minds of the novel's two protagonists.
+	    Austen critiques Marianne Dashwood's
+	    overactive imagination &#x2014 which causes her to become
+	    dangerously dissociated from reality &#x2014 and Elinor Dashwood's
+	    hardened opposition to fantasy &#x2014 which prevents her from
+	    picturing a positive future. In demonstrating the
+	    problems of each sister's perspective and depicting a
+	    reformation of imagination in each woman, Austen presents
+	    her belief that, when properly grounded, the fictive mind
+	    can be a useful tool for envisioning and working towards a better life.</p>
+	  </li></ol>
+	  <p class="title">"Emasculation of Racial Border-Crossers in
+	  Early Films of Spike Lee" [<a href = "Spike Lee.pdf">PDF</a>]</p>
+          <ol class = "reflist">
+          <li>Evan Rosenman, December 2010. Final paper for African and African American Studies 121: Please Wake Up! Race, Gender and Ethnicity in The Early Films of Spike Lee.<br/></li>
+          <li><br/><b>Description:</b><br/>In several of his early films,
+	  influential director Spike Lee presents racial
+	  border-crossing as an act of self-alienation, in which an
+	  individual becomes dislocated from his own social identity.
+	  In 1989's Do the Right Thing and 1991's Jungle Fever,
+	  Lee presents the transgression of racial boundaries as an
+	  undertaking that compromises a man's sense of power and
+	  masculinity. In these films, three male characters &#x2014
+	  Mookie, Flipper, and Paulie &#x2014 establish relationships
+	  with a member of another race, and as a consequence they
+	  suffer a severe loss of agency in their own endeavors.
+	  In order to reclaim their sense of virility and control
+	  over their surroundings, each of these men ultimately makes
+	  another individual feel powerless. Lee offers a perilous
+	  vision of interracial interaction in which individuals can
+	  ultimately be driven to cruelty and aggression as a result
+	  of the dislocating effect of traversing racial boundaries. </p>
+	  </li></ol>
+	    <p class="title">"A Passing Phase or a Sexual Preference? <br/>
+	  Understanding Homosexual Identities in Two Victorian Horror
+	  Stories" [<a href = "Victorian Homosexuality.pdf">PDF</a>]</p>
+          <ol class = "reflist">
+          <li>Evan Rosenman, December 2009. Final paper for English 156: Crime and Horror in Victorian Literature and Culture. <br/></li>
+          <li><br/><b>Description:</b><br/>While some Victorian horror
+	  writers embraced the prevailing views of the era,
+	  which condoned youthful homoeroticism as a developmental
+	  step toward heterosexual adulthood, others
+	  subtly argued for the acknowledgement of homosexuality as
+	  an alternative sexual identity. Such contrasting views can
+	  be found in two famous Victorian horror stories &#x2014
+	  Lady Audley's Secret, by Mary Elizabeth Braddon, and
+	  Strange Case of Dr. Jekyll and Mr. Hyde, by
+	  Robert Louis Stevenson. Braddon strongly implies a
+	  homoerotic attachment between Robert Audley and
+	  his friend George, but she characterizes Robert's homosexual
+	  urges as an element of his youth that he must
+	  overcome in order to enter adulthood. In contrast,
+	  Stevenson's novella implies that the homosexuality of
+	  Dr. Jekyll is an indelible element of his character,
+	  and the doctor's destruction is presented as a consequence
+	  of his inability to reconcile his sexuality with social
+	  convention. </p>
+	  </li></ol>
+	   <p class="title"">"Defining the Mother in the Modern World:
+	  <br/>An Analysis of Surrogacy-Related Case Law and Its
+	  Implications" [<a href = "Surrogacy Law.pdf">PDF</a>]</p>
+          <ol class = "reflist">
+	  <li>Evan Rosenman, May 2010. Final paper for English 90xa:
+	    Crime and Law &#x2014 Drama, Film, and Performance.</li>
+          <li><br/><b>Description:</b><br/>In recent years, the
+	    rise of surrogacy &#x2014 the assisted reproductive practice
+	    in which a woman carries a child to term with the intent
+	    of surrendering that child to another individual or couple
+	    at the time of birth &#x2014 has raised a number of legal
+	    questions about defining both maternity and paternity.
+	    Surrogacy can create up to three separate definitions of
+	    parents: the gamete providers who serve as the child's
+	    genetic ancestors, the surrogate mother who gestates the
+	    child, and the "commissioning" parents, who set in motion
+	    the child's creation. These complexities of legal identity
+	    are compounded by the fact that statutes and case law vary
+	    widely from state to state. Restricting our analysis to
+	    two states with ample case law, we we find that California
+	    case law has tended toward defining motherhood by a
+	    woman's <i>intention</i> to parent, while the prevailing legal
+	    definition in New Jersey characterizes motherhood by
+	    biological means. We analyze these conflicting definitions
+	    in parallel with the legal meaning of paternity, which has
+	    largely been defined by intentionality, rather than
+	    genetics. Lastly, we address the ways in which this
+	    changing definition of parenthood could have enormous
+	    implications for the ways in which we define the social
+	    construct of the family.
+	  </li>
+
+
+</div>
+<?php include ("footer.php"); ?>
+
+</div>
+</body>
+</html>

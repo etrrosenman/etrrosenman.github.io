@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<title>Evan T.R. Rosenman</title>
+<head>
+  <link rel="stylesheet" href="./style.css" type="text/css">
+ <script src="jquery.js"></script> 
+  <script src="functions.js"></script>
+</head>
+<body>
+  <?php include ("navigation.php"); ?>
+  <div class = "center">
+    <br/>
+  <div id = "description">
+
+<b><font size="5">A Guide to the Business Analytics Company Holiday Party (2014)</font></b><br/>
+<b><font size="3"><i>from "Happy Deployments," the internal company blog</font></b><br/>
+
+<ol>
+	<li>You will wind up sitting next to a Senior Vice President: Don’t panic! Despite their perfectly-worded emails, firm-yet-unintimidating handshakes, and inability to fly coach, SVPs are people. People who are very, very senior to you. <br/>
+	Try to engage them on their interests, including (but not limited to): PTA meetings. Golf. Scotch. Property taxes. Armchairs. Lawn maintenance. </li><br/>
+	<li> Review your company flashcards: That person you have verifiably never seen in your entire life? They sit on the ninth floor. You’ve exchanged several emails and spoke on Communicator early this week. They’re considering inviting you to their Housewarming. Don’t screw it up by introducing yourself and asking who they know at work.  </li><br/>
+	<li> You may feel like the only single person at the company. This is because you are the only single person at the company. According to a recent survey I just made up, 93% of employees have been in a relationship with their significant others for at least six years. They recently got engaged on a cliff in Argentina. They’re looking at houses in Arlington. <br/>
+	The singletons will be sitting together at the #foreverAlone table in the back left. Come join us and talk about cat adoption. </li><br/>
+	<li> You may forget a coworker’s significant other’s name. To compensate, your inclination may be to point emphatically when addressing them. Do not do this, lest you come off as hostile. Instead, quickly stalk them on Facebook while telling a lengthy and embarrassing story about your high school years. If this fails, assume all men are named James and all women are named Liz. </li><br/>
+	<li> The following sentence would not be understood by someone who doesn't work at the company: “My EM told me to kick the tires on the analysis, but CGE wouldn’t load so I filed an issue on JIRA and emailed Products. I switched over to data import but the TLOG hadn’t been FTPed yet for the POC for MBA and CMI. So I went over to HARBY and looked at some BC and SIE candidates. No one gets my use cases.” </li><br/>
+	<li> On that note, none of the following are actual words: Calc. Userbase. Benchmarker. Plog. Touchbase. Firmwide. Statify. Devs. Microgeography.  Sharepoint. Triager. Splunk. Offeree. Chainwide. Learnings. </li><br/>
+	<li> Take as many selfies as possible. The company newsletter isn’t going to fill itself! Suggested selfies include “Me with appetizer”-selfie (#sorryForPartying), “Me with client team”-selfie (#rollout), and the classic “Me with the C-Suite” selfie (#noFilter #C3PO #CoolKids #CEOwningIt). </li><br/>
+	<li> Late in the evening you may come up with something so clever, you want to email all of staff about it! Refrain. It isn’t nearly as funny as you think it is. If, instead, you’d like to share your preference for – and enjoyment of – the beef or the fish entrée, go right ahead. </li>
+</ol>
+
+
+
+
+</div>
+  <?php include ("footer.php"); ?>
+
+</div>
+</body>
+</html>

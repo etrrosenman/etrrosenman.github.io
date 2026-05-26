@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en">
+<title>Evan T.R. Rosenman</title>
+<head>
+  <link rel="stylesheet" href="./style.css" type="text/css">
+ <script src="jquery.js"></script> 
+  <script src="functions.js"></script>
+</head>
+<body>
+  <?php include ("navigation.php"); ?>
+  <div class = "center">
+    <br/>
+  <div id = "description">
+
+<b><font size="5">Shipping [Out of] Boston</font></b><br/><br/>
+Dearest friends, frenemies, Bayesians, and Babadooks,
+
+<p>I write to you the bearer of inauspicious tidings. I will soon decamp from our glorious city, the most veritably Bean of all the Towns.* Circumstance and academia have conspired to drag me occidentally – past the meandering Mississippi and the Mostly Rectangular states – to a sunny posting on the Pacific Coast. The journey is treacherous, the destination inhospitable, and if I ever do return, I fear I shan’t be the same.
+
+<p>Yet I offer this missive in bonhomie and good cheer. It is my fondest hope that you might partake with me in the most storied Bostonian tradition: the subterranean Tiki bar. The history of our fair city is a rich tapestry of American folklore and rum cocktails. Boston was founded by the Puritans, who arrived from Europe with little other than their strict faith and their canteens of Mai Tai. One hundred and fifty years later, it was in nearby Lexington that Paul Revere sailed through the night on horseback, warning of the arrival of the British, a Jungle Bird effortlessly balanced in his left hand. In more modern times, an amateur mixologist mismeasured the ingredients for a Zombie cocktail, leading to the Great Molasses Flood of 1919. And I hope that we might contribute our own chapter to this spectacular lineage, by gathering at <a href = "https://www.shoreleaveboston.com/">Shore Leave</a> in the South End.
+
+<p>In the spirit of sentimentality, I offer some brief remembrances of my days in our great City on a Hill.
+
+<p>I first arrived in the Boston area in 2008. It was a complex and dynamic time. Economic tumult was in the air, and gas prices were the talk of the town. Nancy Pelosi was Speaker of the House, and a seemingly interminable presidency – commenced by a popular vote loss – was coming to an end. Soon, “Tik Tok” (the Ke$ha song) would be ubiquitous. And me? I was just a fresh-faced and optimistic youth looking to get an education.
+
+<p>I returned to the Boston area in 2021. It was a complex and dynamic time. Economic tumult was in the air, and gas prices were the talk of the town. Nancy Pelosi was Speaker of the House, and a seemingly interminable presidency – commenced by a popular vote loss – had recently ended. Soon, TikTok (the app) would be ubiquitous. And me? I was just an overeducated thirtysomething who dreamed of one day having central air.
+
+<p>Yet it turns out that Boston – much like Godfather movies, Adele albums, and Gavin Newsom's marriages – is better the second time around. My postdoc has turned out to be a blast, with a higher-than-expected density of trivia, Thai food, laughter, breweries, and burritos. Michelle Wu became mayor. Michelle Yeoh won an Oscar. The vibes have been good.
+
+<p>And what awaits in my future SoCal adventure? An uneasy détente with my soon-to-be-step-cat, Safdi, who moonlights as a financial criminal and played a greater role in the collapse of Silicon Valley Bank than Bloomberg has yet reported. A lifetime of waiting in lines at Philz Coffee, behind middle-aged gentlemen who need to have a six-minute conversation with the barista before they settle on a beverage option that is “natural” and “not too sweet.” Conversations about hiking, biking, and yoga mats. Wellness. Grain bowls. Juicing. Bone broth. Gratitude. And the most Machiavellian of my nemeses: the avocado.
+
+<p>Thinking about it, my heart is so full it could be a California reservoir, any time between <a href "https://en.wikipedia.org/wiki/2011%E2%80%932017_California_drought">2011 and 2017</a>.  
+
+<p>And yet: there are a few reasons to be optimistic. I have a job (yay!), get to start on the tenure track (oy vey.), and enter a new stage of development (Piaget.). And while it's yet to be seen if Angelenos are as fun as Bostonians, they needn't be: the LA metro area has nearly three times the population of the Boston metro area, so if people there are even 34% as cool as you folks on average, I’ll be a lucky gentleman indeed.
+
+<p>Thanks for everything, and hope to see you soon!
+
+<p>Warmly,
+
+<p>Evan
+
+<p>* That's right, Chicago. Just having a Bean doesn’t count.
+
+</div>
+  <?php include ("footer.php"); ?>
+
+</div>
+</body>
+</html>
