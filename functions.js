@@ -1,4 +1,41 @@
 $(document).ready(function(){
+  var lastScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+  var hideAfter = 24;
+  var topbar = document.getElementById("topbar");
+  var widebar = document.querySelector(".widebar");
+
+  function updateHeaderMeasurements() {
+    if (!topbar || !widebar) {
+      return;
+    }
+
+    var topbarHeight = topbar.offsetHeight;
+    var headerHeight = topbarHeight + widebar.offsetHeight;
+    document.documentElement.style.setProperty("--topbar-height", topbarHeight + "px");
+    document.documentElement.style.setProperty("--site-header-height", headerHeight + "px");
+  }
+
+  function updateHeaderVisibility() {
+    var currentScrollTop = Math.max(window.pageYOffset || document.documentElement.scrollTop, 0);
+    var scrollDelta = currentScrollTop - lastScrollTop;
+
+    if (Math.abs(scrollDelta) < 4) {
+      return;
+    }
+
+    if (currentScrollTop <= hideAfter || scrollDelta < 0) {
+      document.body.classList.remove("site-header-hidden");
+    } else if (scrollDelta > 0) {
+      document.body.classList.add("site-header-hidden");
+    }
+
+    lastScrollTop = currentScrollTop;
+  }
+
+  updateHeaderMeasurements();
+  window.addEventListener("resize", updateHeaderMeasurements);
+  window.addEventListener("scroll", updateHeaderVisibility, { passive: true });
+
   // light up parent menu option when poem submenu is highlighted 
   $(".poemoptions a").hover(function() {
       $(this).css("background-color","#000000");

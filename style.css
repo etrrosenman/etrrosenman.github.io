@@ -3,6 +3,11 @@ html, body {
   padding: 0;
 }
 
+html {
+  overflow-y: scroll;
+  scrollbar-gutter: stable;
+}
+
 body {
   background: #f7f8f3;
   color: #202124;
@@ -22,6 +27,11 @@ a:hover {
 #topbar {
   background: #eef2e8;
   border-bottom: 1px solid #d8dfd0;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  transition: transform 180ms ease;
+  will-change: transform;
 }
 
 #sitename {
@@ -43,6 +53,19 @@ a:hover {
 .widebar {
   background: #263447;
   border-bottom: 4px solid #c8a84b;
+  position: sticky;
+  top: var(--topbar-height, 96px);
+  z-index: 19;
+  transition: transform 180ms ease;
+  will-change: transform;
+}
+
+body.site-header-hidden #topbar {
+  transform: translateY(-100%);
+}
+
+body.site-header-hidden .widebar {
+  transform: translateY(calc(-1 * var(--site-header-height, 152px)));
 }
 
 ul.topnav {
@@ -250,11 +273,19 @@ ul {
   }
 
   ul.topnav {
+    gap: 0;
     padding: 0 10px;
+  }
+
+  .topnav li {
+    flex: 1 1 20%;
+    min-width: 0;
   }
 
   .topnav a {
     padding: 10px;
+    text-align: center;
+    overflow-wrap: anywhere;
   }
 
   .center {
@@ -279,5 +310,18 @@ ul {
 
   tr, td, th {
     padding: 10px 8px;
+  }
+}
+
+@media (max-width: 430px) {
+  .topnav li {
+    flex-basis: 33.333%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #topbar,
+  .widebar {
+    transition: none;
   }
 }
